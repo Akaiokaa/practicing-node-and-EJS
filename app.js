@@ -11,9 +11,9 @@ app.get('/', (req, res) => {
     res.render('home', {person});
 })
 
-app.get('/coworkers', (req, res) => {
+app.get('/friends', (req, res) => {
     const coworkers = ['Fred', "Mick", "Zack"];
-    res.render('coworkers', {coworkers});
+    res.render('friends', {coworkers});
 })
 
 app.listen('/', (req, res) => {
