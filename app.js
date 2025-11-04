@@ -10,6 +10,12 @@ app.get('/', (req, res) => {
     const person = {name: 'Donald', occupation: 'plumber'}
     res.render('home', {person});
 })
+
+app.get('/coworkers', (req, res) => {
+    const coworkers = ['Fred', "Mick", "Zack"];
+    res.render('coworkers', {coworkers});
+})
+
 app.listen('/', (req, res) => {
     app.listen(PORT, () => console.log(`Server is running on localhost http://localhost:${PORT}`))
 })
